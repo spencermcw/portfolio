@@ -1,0 +1,27 @@
+.footer {
+    padding: 5rem;
+    background-color: $color-primary-dark;
+    color: $color-white;
+    text-align: center;
+
+    &__icon {
+        &:not(:last-of-type) {
+            margin-right: 4rem;
+        }
+    }
+
+    &__social-icon {
+        // filter: grayscale(100);
+        height: 4rem;
+        mix-blend-mode: luminosity;
+        filter: drop-shadow(1px -1px 0 $color-gray-mid);
+    }
+
+    &__copyright {
+        margin-top: 2rem;
+    }
+
+    &__reserved {
+        color: $color-gray-mid;
+    }
+}

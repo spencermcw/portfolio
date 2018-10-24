@@ -1,0 +1,17 @@
+.button {
+    min-width: 20rem;
+    display: inline-block;
+    border: 1px solid $red;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    transition: .2s all;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: $red;
+        color: black;
+    }
+}

@@ -1,0 +1,68 @@
+.section-about{
+    padding: 15rem 5rem; 
+    background-color: $color-gray-light;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+        margin-top: -6rem;
+    }
+    
+    @include media-breakpoint-down(sm) {
+        padding: 5rem;
+    }
+}
+
+.section-bar {
+    backface-visibility: hidden;
+    position: relative;
+    color: $color-white;
+    padding: 10rem 5rem 15rem 5rem;
+
+    background-image:
+        linear-gradient(
+            to bottom right,
+            rgba($color-secondary, 0.8),
+            rgba($color-primary-dark, 0.7)),
+        url(./img/bar.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-up(md) {
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 5rem;
+    }
+}
+
+.section-services {
+    padding: 15rem 5rem;
+
+    @include media-breakpoint-down(md) {
+        padding: 5rem;
+    }
+}
+
+.section-reviews {
+    padding: 10rem 5rem;
+    background-color: $color-primary-dark;
+    color: $color-white;
+
+    @include media-breakpoint-down(md) {
+        padding: 5rem;
+    }
+}
+
+.section-contact {
+    padding: 5rem;
+    text-align: center;
+}
+
+.contact__hours {
+    @include media-breakpoint-down(xs) {
+        margin-bottom: 2rem;
+    }
+}

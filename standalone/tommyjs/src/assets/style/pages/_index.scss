@@ -1,0 +1,16 @@
+.header {
+        &__modern {
+            display: block;
+            text-transform: uppercase;
+        }
+
+        &__web {
+            display: block;
+            text-transform: lowercase;
+        }
+
+        &__solutions {
+            display: block;
+            text-transform: uppercase;
+        }
+}

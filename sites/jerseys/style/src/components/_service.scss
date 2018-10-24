@@ -1,0 +1,39 @@
+.service {
+    margin-bottom: 4rem;
+
+    &__list {
+        list-style: none;
+        margin: 0 auto;
+
+        &-item {
+            @include clearfix;
+            display: block;
+            padding: 1rem 1rem 0 1rem;
+            border-bottom: 1px solid $color-gray-light;
+
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    &-title {
+        float: left;
+    }
+
+    &-price {
+        float: right;
+    }
+
+    &__links {
+        width: 100%;
+        text-align: center;
+    }
+    &__link {
+        @include media-breakpoint-up(md) {
+            &:not(:last-child) {
+                margin-right: 5rem;
+            }
+        }
+    }
+}

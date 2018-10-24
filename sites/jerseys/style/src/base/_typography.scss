@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Didact+Gothic');
+
+body {
+    font-family: $font-didact;
+    font-size: 1.6rem;
+    font-weight: 400;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 1.4rem;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 1.3rem;
+    }
+}
+
+.heading-primary {
+    font-family: $font-slab;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+
+    &--main {
+        display: block;
+        color: $color-primary-dark;
+        font-size: 6rem;
+        letter-spacing: 1rem;
+        line-height: .8;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 4.6rem;
+        }
+
+        @include media-breakpoint-down(xs) {
+            font-size: 3.1rem;
+        }
+    }
+
+    &--sub {
+        display: block;
+        color: $color-gray-light;
+        letter-spacing: .8rem;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 2.4rem;
+        }
+
+        @include media-breakpoint-down(xs) {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.heading-secondary {
+    display: block;
+    font-family: $font-slab;
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 3rem;
+    }
+
+    &--dark {
+        color: $color-primary-dark;
+    }
+
+    &--light {
+        color: $color-gray-light;
+    }
+}
+
+.heading-tertiary {
+    display: block;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 2rem;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 1.7rem;
+    }
+
+    &--dark {
+        color: $color-primary-dark;
+    }
+
+    &--light {
+        color: $color-gray-light;
+    }
+}
+
+.link {
+    &,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        color: inherit;
+        transition: all .2s;
+    }
+
+    &:hover {
+        color: $color-tertiary;
+    }
+}

@@ -1,0 +1,35 @@
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes nav-entry {
+    0% {
+        transform: translateY(-100rem) rotateZ(-45deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) rotateZ(-45deg);
+        opacity: 1;
+    }
+}

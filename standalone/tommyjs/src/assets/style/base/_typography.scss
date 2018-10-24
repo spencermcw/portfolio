@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Varela+Round');
+
+body {
+    font-size: 1.6rem;
+    font-family: $font--2;
+}
+
+.heading {
+
+    &--primary {
+        font-family: $font--1;
+    }
+
+    &__modern {
+        display: block;
+        text-transform: uppercase;
+    }
+
+    &__web {
+        display: block;
+        text-transform: lowercase;
+    }
+
+    &__solutions {
+        display: block;
+        text-transform: uppercase;
+    }
+}

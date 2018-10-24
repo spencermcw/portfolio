@@ -1,0 +1,15 @@
+@mixin align-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+@mixin drink-box-background($img) {
+    background-image:
+        linear-gradient(
+            rgba($color-white, 0.8),
+            rgba($color-tertiary, 0.8)
+        ),
+        url($img);
+}

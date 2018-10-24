@@ -1,0 +1,27 @@
+.header {
+    position: relative;
+    height: 80vh;
+    background: 
+        linear-gradient(
+            rgba($color-primary--3,.8),
+            rgba($color-primary--2,.9)),
+        url(./img/glasses.jpg);
+    background-position: top center;
+    background-size: cover;
+
+    .heading-primary {
+        width: 90%;
+        @include center;
+
+        &--main {
+            color: $color-white;
+            -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        }
+        &--sub {
+            color: $color-highlight--1;
+            -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s 0.3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        }
+    }
+}
