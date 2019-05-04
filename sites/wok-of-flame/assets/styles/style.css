@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Merienda|Questrial|Shadows+Into+Light");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  height: 100%; }
+  @media (min-width: 576px) {
+    html {
+      font-size: 100%; } }
+
+body {
+  box-sizing: border-box;
+  height: 100%; }
+
+a, a:visited, a:active {
+  text-decoration: none;
+  color: inherit; }
+
+main {
+  color: white;
+  font-family: "Questrial", sans-serif; }
+
+.header__heading {
+  text-align: center; }
+  .header__heading--main {
+    display: block;
+    font-family: "Merienda", cursive;
+    font-size: 4rem; }
+  .header__heading--sub {
+    display: block;
+    color: #cc3737;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    transform: rotateZ(-2deg) translateY(-0.5rem); }
+
+.button {
+  min-width: 20rem;
+  display: inline-block;
+  border: 1px solid #cc3737;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  transition: .2s all;
+  line-height: 1.5;
+  text-transform: uppercase; }
+  .button:hover, .button:focus, .button:active {
+    background-color: #cc3737;
+    color: black; }
+
+.embed--pdf {
+  margin-top: 3rem;
+  width: 90%;
+  min-height: 100rem; }
+
+.home {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 100% !important;
+  padding: 10rem 0 2rem 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  font-size: 1.6rem;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) 30%, black), url("../images/wok.jpg");
+  background-position: top center;
+  background-size: cover; }
+
+.phone {
+  padding: 4rem 0; }
+
+.hours__list {
+  width: 60%;
+  margin: 0 auto; }
+  @media (min-width: 576px) {
+    .hours__list {
+      width: 25rem; } }
+
+.hours__day {
+  text-align: left;
+  width: fit-content; }
+
+.hours__time {
+  text-align: right; }
+
+.menu-link {
+  padding: 3rem 0; }
+
+.address {
+  padding-bottom: 7rem; }
+
+.social {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;
+  align-content: center;
+  justify-content: space-around; }
+  .social-icon {
+    font-size: 3rem; }
+
+.decoration {
+  position: absolute;
+  z-index: 1;
+  width: 500rem;
+  height: 7rem;
+  background-color: #cc3737;
+  border: 2px solid #751e1e;
+  transform-origin: bottom center;
+  transform: rotateZ(-1deg); }
+  .decoration--1 {
+    top: -6rem;
+    left: -2rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4); }
+  .decoration--2 {
+    bottom: -2rem;
+    left: -2rem;
+    box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.4); }
+  .decoration--3 {
+    top: -1rem;
+    left: -2rem;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4); }
+
+.menu {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 100% !important;
+  padding: 10rem 0 2rem 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  font-size: 1.6rem;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) 30%, black), url(images/bamboo.jpg);
+  background-position: top center;
+  background-size: cover; }
