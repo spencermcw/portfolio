@@ -896,7 +896,8 @@ body {
       clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%); } }
   @media (max-width: 991.98px) {
     .section-bar {
-      padding: 5rem; } }
+      padding: 5rem;
+      background-attachment: scroll; } }
 
 .section-services {
   padding: 15rem 5rem; }
