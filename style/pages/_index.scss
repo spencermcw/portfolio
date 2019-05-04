@@ -1,4 +1,50 @@
-.main {
-    padding: 3rem;
-    text-align: center;
+.objective {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background-color: theme(primary);
+  text-shadow: 0 4px 8px rgba(black, .3);
+  text-align: center;
+
+  &__text {
+    font-weight: normal;
+    line-height: 2;
+  }
 }
+
+.education {
+  @include container;
+  min-height: 100vh;
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__school {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  &__image {
+    position: relative;
+    max-height: 20rem;
+  }
+
+  &__text {
+    line-height: 2;
+    
+    &--right {
+      text-align: right;
+    }
+  }
+
+}
+
