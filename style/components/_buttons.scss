@@ -3,3 +3,14 @@
     padding: 1rem;
     border-bottom: 3px solid $color-primary--1;
 }
+
+.link {
+  color: inherit;
+  transition: color .3s;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: theme(primary);
+  }
+}

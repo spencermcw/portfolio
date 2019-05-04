@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  height: 100%; }
+
+body {
+  box-sizing: border-box;
+  height: 100%; }
+
+a, a:active, a:focus {
+  text-decoration: none;
+  color: inherit; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Quicksand", sans-serif; }
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 1rem; }
+
+.button {
+  display: inline-block;
+  padding: 1rem;
+  border-bottom: 3px solid #67EF92; }
+
+.link {
+  color: inherit;
+  transition: color .3s; }
+  .link:active, .link:focus, .link:hover {
+    color: #b20136; }
+
+.list {
+  list-style: none; }
+  .list__item {
+    padding: 1rem; }
+
+.header {
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  background-color: #53C176;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%; }
+  .hero__title {
+    margin-bottom: 4rem; }
+  .hero__links {
+    font-size: 2.5rem; }
+    .hero__links > a:not(:first-child) {
+      margin-left: 2rem; }
+  .hero__tagline {
+    position: absolute;
+    bottom: 5rem; }
+
+.main {
+  padding: 3rem;
+  text-align: center; }

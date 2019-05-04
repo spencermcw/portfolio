@@ -1,18 +1,9 @@
-// BOOTSTRAP - must install 'bootstrap' via npm.
-// Required
-// @import "../../node_modules/bootstrap/scss/functions";
-// @import "../../node_modules/bootstrap/scss/variables";
-// @import "../../node_modules/bootstrap/scss/mixins";
-// Optional
-// @import "../../node_modules/bootstrap/scss/reboot";
-// @import "../../node_modules/bootstrap/scss/type";
-// @import "../../node_modules/bootstrap/scss/images";
-// @import "../../node_modules/bootstrap/scss/code";
-// @import "../../node_modules/bootstrap/scss/grid";
+@import "themes/theme";
 
-@import "utils/variables";
-@import "utils/mixins";
-@import "utils/helpers";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/helpers";
+@import "abstracts/functions";
 
 @import "base/reset";
 @import "base/typography";
@@ -21,9 +12,8 @@
 @import "components/list";
 
 @import "layout/header";
+@import "layout/hero";
 @import "layout/navigation";
 
 @import "pages/index";
 
-@import "themes/theme";
-@import "themes/admin";
