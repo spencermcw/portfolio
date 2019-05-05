@@ -45,6 +45,32 @@
       text-align: right;
     }
   }
+}
 
+.experience {
+  padding: 8rem 4rem;
+  min-height: 100vh;
+  background-color: theme(primary);
+
+  &__title {
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    font-size: 3rem;
+  }
+
+  & .position {
+    @include container;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    box-shadow: 0 4px 8px rgba(black, .4);
+    padding: 4rem;
+    background-color: white;
+    border-radius: 3px;
+
+    &__employer {
+      margin-bottom: 1rem;
+    }
+  }
 }
 
