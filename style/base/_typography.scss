@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400');
 
 body {
-    font-size: 1.6rem;
-    font-family: $font-quicksand;
+  font-size: 1.6rem;
+  font-family: $font-quicksand;
 }
 
 h1 {
-    font-size: 4rem;
-    letter-spacing: 1rem;
+  font-size: 4rem;
 }
+
+.heading {
+  margin-bottom: 3rem;
+
+  &--light {
+    color: white;
+  }
+}
+

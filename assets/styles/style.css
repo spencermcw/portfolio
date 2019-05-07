@@ -1,4 +1,16 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.5.3
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
 @import url("https://fonts.googleapis.com/css?family=Quicksand:400");
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
 *,
 *::before,
 *::after {
@@ -23,8 +35,12 @@ body {
   font-family: "Quicksand", sans-serif; }
 
 h1 {
-  font-size: 4rem;
-  letter-spacing: 1rem; }
+  font-size: 4rem; }
+
+.heading {
+  margin-bottom: 3rem; }
+  .heading--light {
+    color: white; }
 
 .button {
   display: inline-block;
@@ -89,26 +105,44 @@ h1 {
 .education {
   max-width: 80rem;
   margin: 0 auto;
-  min-height: 100vh;
   padding: 8rem 0;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  .education__school {
+  @media screen and (max-width: 63.99875em) {
+    .education {
+      min-height: 0;
+      justify-content: space-around; } }
+  .education .university {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
-    align-items: center;
-    overflow: hidden; }
-  .education__image {
-    position: relative;
-    max-height: 20rem; }
-  .education__text {
-    line-height: 2; }
-    .education__text--right {
-      text-align: right; }
+    align-items: center; }
+    .education .university:not(:last-child) {
+      margin-bottom: 4rem; }
+    .education .university__image {
+      flex: 1; }
+      @media screen and (max-width: 63.99875em) {
+        .education .university__image {
+          position: absolute;
+          opacity: .1;
+          transform: rotateZ(-5deg);
+          max-width: 13rem;
+          z-index: -1; } }
+      .education .university__image > img {
+        width: 100%; }
+    .education .university__text {
+      flex: 2;
+      line-height: 2;
+      padding: 0 2rem; }
+      @media screen and (max-width: 63.99875em) {
+        .education .university__text {
+          text-align: center; } }
+      @media print, screen and (min-width: 64em) {
+        .education .university__text:nth-child(2n) {
+          text-align: right; } }
 
 .experience {
   padding: 8rem 4rem;
@@ -129,4 +163,18 @@ h1 {
     background-color: white;
     border-radius: 3px; }
     .experience .position__employer {
-      margin-bottom: 1rem; }
+      margin-bottom: 2rem; }
+    .experience .position__tech {
+      color: #b20136;
+      list-style: none;
+      display: inline-block; }
+      .experience .position__tech > li {
+        float: left; }
+        .experience .position__tech > li:not(:last-child):after {
+          content: ",";
+          margin-right: 3px; }
+    .experience .position__description {
+      list-style: none;
+      margin-bottom: 2rem; }
+      .experience .position__description > li:not(:last-child) {
+        margin-bottom: 1rem; }

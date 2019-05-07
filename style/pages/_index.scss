@@ -17,32 +17,58 @@
 
 .education {
   @include container;
-  min-height: 100vh;
   padding: 8rem 0;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  &__school {
+  @include breakpoint(medium down) {
+    min-height: 0;
+    justify-content: space-around;
+  }
+
+  & .university {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    overflow: hidden;
-  }
 
-  &__image {
-    position: relative;
-    max-height: 20rem;
-  }
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
 
-  &__text {
-    line-height: 2;
-    
-    &--right {
-      text-align: right;
+    &__image {
+      flex: 1;
+
+      @include breakpoint(medium down) {
+        position: absolute;
+        opacity: .1;
+        transform: rotateZ(-5deg);
+        max-width: 13rem;
+        z-index: -1;
+      }
+
+      & > img {
+        width: 100%;
+      }
+    }
+
+    &__text {
+      flex: 2;
+      line-height: 2;
+      padding: 0 2rem;
+
+      @include breakpoint(medium down) {
+        text-align: center;
+      }
+
+      @include breakpoint(large) {
+        &:nth-child(2n) {
+          text-align: right;
+        }
+      }
     }
   }
 }
@@ -69,7 +95,31 @@
     border-radius: 3px;
 
     &__employer {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    &__tech {
+      color: theme(primary);
+      list-style: none;
+      display: inline-block;
+
+      & > li {
+        float: left;
+
+        &:not(:last-child):after {
+          content: ",";
+          margin-right: 3px;
+        }
+      }
+    }
+
+    &__description {
+      list-style: none;
+      margin-bottom: 2rem;
+
+      & > li:not(:last-child) {
+        margin-bottom: 1rem;
+      }
     }
   }
 }
