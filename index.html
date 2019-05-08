@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <link rel="stylesheet" href="assets/styles/style.css">
     <title>Spencer McWilliams | Portfolio</title>
   </head>
@@ -80,5 +81,31 @@
       </div>
     </section>
 
+    <section id="technology" class="technology">
+      <h2 class="heading text-center">Web</h2>
+      <div class="technology__options">
+        <span :class="['option', index === selected ? 'active' : '']" v-for="(tech, index) in technology.front" :key="tech.name" @click="select(index)">
+          <i :class="[tech.icon, 'option__icon']"></i>
+          <br>
+          {{ tech.name }}
+        </span>
+      </div>
+      <h3 class="heading text-center">{{ selectedTech.name }}</h3>
+      <p class="technology__blurb">{{ selectedTech.about }}</p>
+      <p class="technology__experience">Experience: {{ selectedTech.exp }}</p>
+    </section>
+
+    <div class="angled-divider"></div>
+
+    <section class="projects">
+      <h2 class="heading text-center">Projects</h2>
+      <ul>
+        <li>
+          <a href="sites/pwc">Personal Web Consulting</a>
+        </li>
+      </ul>
+    </section>
+
+    <script src="assets/scripts/app.js"></script>
   </body>
 </html>

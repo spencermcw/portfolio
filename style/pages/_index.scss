@@ -8,6 +8,7 @@
   background-color: theme(primary);
   text-shadow: 0 4px 8px rgba(black, .3);
   text-align: center;
+  padding: 0 2rem;
 
   &__text {
     font-weight: normal;
@@ -119,6 +120,36 @@
 
       & > li:not(:last-child) {
         margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.technology {
+  padding: 8rem 4rem;
+  min-height: 100vh;
+
+  &__blurb {
+    margin-bottom: 2rem;
+  }
+
+  &__options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+
+    & .option {
+      text-align: center;
+      flex: 1 30%;
+      margin-bottom: 1rem;
+
+      &.active {
+        color: theme(primary);
+      }
+
+      &__icon {
+        font-size: 3rem;
       }
     }
   }

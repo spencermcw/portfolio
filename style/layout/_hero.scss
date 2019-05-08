@@ -7,6 +7,7 @@
   height: 100vh;
   width: 100%;
   text-align: center;
+  padding: 0 2rem 15rem 2rem;
 
   &__title {
     margin-bottom: 4rem;
@@ -23,6 +24,6 @@
 
   &__tagline {
     position: absolute;
-    bottom: 5rem;
+    bottom: 15rem;
   }
 }
