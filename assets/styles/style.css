@@ -4,7 +4,7 @@
  * foundation.zurb.com
  * Licensed under MIT Open Source
  */
-@import url("https://fonts.googleapis.com/css?family=Quicksand:400");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400|Montserrat");
 .text-right {
   text-align: right; }
 
@@ -32,13 +32,14 @@ a, a:active, a:focus {
 
 body {
   font-size: 1.6rem;
-  font-family: "Quicksand", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 h1 {
   font-size: 4rem; }
 
 .heading {
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  font-family: "Quicksand", sans-serif; }
   .heading--light {
     color: white; }
 

@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "foundation-sites": "^6.5.3",
+    "node-dir": "^0.1.17"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "scripts": {
+    "build": "node-sass style/main.scss assets/styles/style.css --output-style compressed",
+    "watch:sass": "node-sass style/main.scss -w assets/styles/style.css --output-style condensed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/spencermcw/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/spencermcw/portfolio#readme"
+}

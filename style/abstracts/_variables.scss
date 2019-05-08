@@ -1,4 +1,6 @@
-$font-quicksand: 'Quicksand', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400|Montserrat');
+$font-quicksand: ('Quicksand', sans-serif);
+$font-montserrat: ('Montserrat', sans-serif);
 
 $color-primary--1: #67EF92;
 $color-primary--2: #53C176;

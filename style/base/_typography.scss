@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400');
-
 body {
   font-size: 1.6rem;
-  font-family: $font-quicksand;
+  font-family: $font-montserrat;
 }
 
 h1 {
@@ -11,6 +9,7 @@ h1 {
 
 .heading {
   margin-bottom: 3rem;
+  font-family: $font-quicksand;
 
   &--light {
     color: white;
