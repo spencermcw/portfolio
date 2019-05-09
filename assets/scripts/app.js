@@ -45,7 +45,6 @@ let technology = new Vue({
   },
   methods: {
     select(tech) {
-      console.log(tech)
       this.selected = tech
     }
   }
