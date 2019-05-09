@@ -1,7 +1,45 @@
-.button {
+.btn {
   display: inline-block;
-  padding: 1rem;
-  border-bottom: 3px solid $color-primary--1;
+  position: relative;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  text-align: center;
+  transition: all .5s;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    z-index: -1;
+
+    transition: all .2s;
+  }
+
+  &:active:after,
+  &:hover:after,
+  &:focus:after {
+    height: 3px;
+    border-radius: 0;
+  }
+
+  &--primary {
+    color: white;
+
+    &:after {
+      background-color: theme(primary);
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+      color: theme(primary);
+    }
+  }
 }
 
 .link {
