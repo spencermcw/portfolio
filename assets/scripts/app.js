@@ -1,5 +1,3 @@
-console.log('appjs loaded')
-
 let technology = new Vue({
   el: "#technology",
   data: {
