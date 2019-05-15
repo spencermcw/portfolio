@@ -1,0 +1,19 @@
+.links-list {
+  width: 30rem;
+  min-width: fit-content;
+  max-width: 90%;
+  margin: 0 auto;
+
+  & > li {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    & > .repo {
+      position: absolute;
+      left: -3rem;
+    }
+  }
+}

@@ -7,9 +7,22 @@ h1 {
   font-size: 4rem;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4, h5, h6 {
+  font-size: 1.8rem;
+}
+
 .heading {
   margin-bottom: 3rem;
-  font-family: $font-quicksand;
+  font-family: $font-nunito;
+  font-weight: normal;
 
   &--light {
     color: white;
