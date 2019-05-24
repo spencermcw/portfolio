@@ -1,0 +1,9 @@
+.owl-dot {
+  &:hover > span {
+    background: theme(secondary) !important;
+  }
+
+  &.active > span {
+    background: theme(primary) !important;
+  }
+}
