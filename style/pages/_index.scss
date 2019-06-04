@@ -89,6 +89,10 @@
   background-image: linear-gradient(rgba(theme(secondary),.8), rgba(theme(primary),.8)),
     url('../images/abstract.jpg');
 
+  @include breakpoint(small only) {
+    background-attachment: scroll;
+  }
+
   &__title {
     text-align: center;
     font-weight: normal;

@@ -217,6 +217,9 @@ h4, h5, h6 {
   background-position: top;
   background-repeat: no-repeat;
   background-image: linear-gradient(rgba(255, 188, 66, 0.8), rgba(178, 1, 54, 0.8)), url("../images/abstract.jpg"); }
+  @media screen and (max-width: 39.99875em) {
+    .experience {
+      background-attachment: scroll; } }
   .experience__title {
     text-align: center;
     font-weight: normal;
