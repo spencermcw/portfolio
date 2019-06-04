@@ -79,14 +79,22 @@
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  background-color: theme(secondary);
+  //background-color: theme(secondary);
   padding: 8rem 0;
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(theme(secondary),.8), rgba(theme(primary),.8)),
+    url('../images/abstract.jpg');
 
   &__title {
     text-align: center;
     font-weight: normal;
     color: white;
     font-size: 3rem;
+    text-shadow: 0 0 8px rgba(black, .6);
   }
 
   & .position {
