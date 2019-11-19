@@ -128,7 +128,7 @@
 
         &:not(:last-child):after {
           content: ",";
-          margin-right: 3px;
+          margin-right: 5px;
         }
       }
     }
