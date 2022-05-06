@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script> -->
+  <script src="assets/scripts/vue.min.js"></script>
+  <link rel="stylesheet" href="assets/styles/fa/css/all.min.css">
   <link rel="stylesheet" href="assets/styles/style.css">
   <link rel="stylesheet" href="assets/styles/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/styles/owl.theme.default.min.css">
@@ -19,7 +20,7 @@
     <h1 class="hero__title heading">Spencer McWilliams</h1>
     <div class="hero__links">
       <a href="https://bitbucket.org/spencermcw" target="_blank" class="link"><i class="fab fa-bitbucket"></i></a>
-      <!-- <a href="https://github.com/spencermcw?tab=repositories" target="_blank" class="link"><i class="fab fa-github"></i></a> -->
+      <a href="https://github.com/spencermcw?tab=repositories" target="_blank" class="link"><i class="fab fa-github"></i></a>
       <a href="https://linkedin.com/in/spencermcw" target="_blank" class="link"><i class="fab fa-linkedin-in"></i></a>
       <a href="https://docs.google.com/document/d/1ttuoChsVLLl2ylJSisK1LRK-XaBB0TzdZ-EgXKk7Wpg/edit?usp=sharing" target="_blank" class="link"><i class="fas fa-file-alt"></i></a>
 
@@ -63,7 +64,7 @@
     </div>
 
     <div class="position">
-      <h3 class="position__title">Software Developer</h3>
+      <h3 class="position__title">Full-Stack Developer</h3>
       <p class="position__employer">Kodable<br>June 2019 - November 2019</p>
       <ul class="position__description">
         <li>Maintained and upgraded legacy software stack in a fast-paced environment.</li>
@@ -90,7 +91,7 @@
       </ul>
     </div>
     <div class="position">
-      <h3 class="position__title">Web Developer</h3>
+      <h3 class="position__title">Front-End Web Developer</h3>
       <p class="position__employer">DK Web Design<br>November 2018 - May 2019</p>
       <ul class="position__description">
         <li>Independently presented and established modern standards for projects within a month of employment. 7-1 SASS Pattern, npm, etc.</li>
@@ -137,7 +138,7 @@
   </section>
 
   <section id="technology" class="technology">
-    <h2 class="heading text-center">Web Technology</h2>
+    <h2 class="heading text-center">Technologies</h2>
     <div class="technology__options">
       <span :class="['option', index === selected ? 'active' : '']" v-for="(tech, index) in technology.front"
         :key="tech.name" @click="select(index)">
@@ -153,7 +154,17 @@
   </section>
 
   <section class="projects">
-    <h2 class="heading text-center">Professional Projects</h2>
+    <h2 class="heading text-center">Web 3</h2>
+    <ul class="links-list">
+      <li>
+        <a href="https://zoobay.io" class="btn btn--primary grow" target="_blank">ZooBay</a>
+      </li>
+      <li>
+        <a href="https://vimeo.com/661839209/17e41b8022" class="btn btn--primary grow" target="_blank">Royal Flush</a>
+      </li>
+    </ul>
+
+    <h2 class="heading text-center">Web 2</h2>
     <p>The following sites were designed by <strong><a href="https://www.dkwebdesign.com" class="link">DK Web Design</a></strong>.</p>
     <ul class="links-list">
       <li>
@@ -176,9 +187,11 @@
       </li>
     </ul>
 
+    <h2 class="heading text-center">Inoperable Projects</h2>
+
     <div class="project">
-      <h2 class="heading text-center">Kingdom Death Resource & Inventory Project</h2>
-      <p class="text-center">Written in Vue.js with a MongoDB backend.<br>The content of this game is not suitable for all ages.<br>Currently inoperable.</p>
+      <h3 class="heading text-center">Kingdom Death Resource & Inventory Project</h3>
+      <p class="text-center">Vue.js &amp; MongoDB</p>
       <div class="owl-carousel owl-theme">
         <img src="assets/images/KDMRM/settlement_mobile.PNG" alt="Home Page">
         <img src="assets/images/KDMRM/settlement2_mobile.PNG" alt="Home Page">
@@ -192,8 +205,8 @@
     </div>
 
     <div class="project">
-      <h2 class="heading text-center">SwitchFit</h2>
-      <p class="text-center">Written for iOS utilizing Swift.<br>Backend written by a <a href="https://www.linkedin.com/in/rickbunch1/" class="link">colleague</a>.</p>
+      <h3 class="heading text-center">SwitchFit</h3>
+      <p class="text-center">iOS (Swift)</p>
       <div class="owl-carousel owl-theme">
         <img src="assets/images/SwitchFit/home.png" alt="">
         <img src="assets/images/SwitchFit/home2.png" alt="">

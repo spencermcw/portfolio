@@ -6,10 +6,8 @@
   "dependencies": {
     "foundation-sites": "^6.5.3",
     "node-dir": "^0.1.17",
+    "node-sass": "^7.0.1",
     "owl.carousel": "^2.3.4"
-  },
-  "devDependencies": {
-    "node-sass": "^4.12.0"
   },
   "scripts": {
     "build": "node-sass style/main.scss assets/styles/style.css --output-style compressed",
