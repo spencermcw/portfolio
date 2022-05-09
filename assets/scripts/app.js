@@ -36,7 +36,7 @@ let technology = new Vue({
           My foray into blockchain came in September of 2021.
           I had been familiar with the space as a consumer for about a year before exploring the bones of the ecosystem.
           Given my background in Web 2 my blockchain experience has been thrilling and an absolute treat.
-          While the ecosystem is coming into it's own, I'm enjoying growing with it.
+          While the ecosystem is coming into its own, I'm enjoying growing with it.
         `,
         name: "Blockchain",
         exp: "Since 2021"
