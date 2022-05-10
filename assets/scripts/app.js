@@ -3,6 +3,16 @@ let technology = new Vue({
   data: {
     technology: {
       front: [{
+        icon: "fab fa-ethereum",
+        about: `
+          My foray into blockchain began in September of 2021.
+          I had been familiar with the space as a consumer for about a year before exploring the bones of the ecosystem.
+          Given my background in Web 2 my blockchain experience has been thrilling and an absolute treat.
+          While the ecosystem is coming into its own, I'm enjoying growing with it.
+        `,
+        name: "Blockchain",
+        exp: "Since 2021"
+      }, {
         icon: "fab fa-html5",
         about: `
           My first exposure with HTML was in Junior High and I've been working with it ever since.
@@ -30,16 +40,6 @@ let technology = new Vue({
         `,
         name: "Vue",
         exp: "Since 2018"
-      }, {
-        icon: "fab fa-ethereum",
-        about: `
-          My foray into blockchain came in September of 2021.
-          I had been familiar with the space as a consumer for about a year before exploring the bones of the ecosystem.
-          Given my background in Web 2 my blockchain experience has been thrilling and an absolute treat.
-          While the ecosystem is coming into its own, I'm enjoying growing with it.
-        `,
-        name: "Blockchain",
-        exp: "Since 2021"
       }, {
         icon: "fa fa-code",
         about: "Other Tech I'm familiar with: PHP, Angular, React, Redux, Vuex, TypeScript, ASP, JSF, Ruby on Rails, (Python's) Django, Apache, Nginx, Passport, Mocha/Chai, Loopback, Knex, TypeORM, Mongoose... To name a few.",
